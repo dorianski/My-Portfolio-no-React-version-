@@ -1,0 +1,849 @@
+html,body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+.part1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+    }
+    
+    .burger div{
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: white;
+        transition: .7s ease-in-out;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    height: 100vh;
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+    background-color: black;
+    position: absolute;
+}
+
+.nav-links li{
+  list-style: none;
+  padding: 25px;
+  color: white;
+}
+
+.logo img{
+  width: 100%;
+  height: 100%;
+}
+
+.social-links li{
+  list-style: none;
+  padding: 10px;
+}
+
+.social-links li a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.home {
+    width: 95%;
+    height: 100vh;
+    margin-left: 5%;
+    position: absolute;
+    background-image: url('../img/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+    width: 95%;
+    height: 100vh;
+    margin-left: 5%;
+    position: absolute;
+    display: none;
+    background-image: url('../img/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.portfolio {
+    width: 95%;
+    height: 100vh;
+    margin-left: 5%;
+    position: absolute;
+    display: none;
+    background-image: url('../img/portfolio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact {
+    width: 95%;
+    height: 100vh;
+    margin-left: 5%;
+    position: absolute;
+    display: none;
+    background-image: url('../img/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu button{
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    width: 100%;
+    height: 5%;
+}
+
+.menu button:hover{
+    background-color:#f7b64f;
+}
+
+#home li{
+    color: black;
+}
+
+.aboutcontent{
+    width: 90%;
+    height: 70vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.about h1{
+    padding-top: 5vh;
+    font-size: 60px;
+}
+
+hr{
+    width: 25%;
+    margin-left: 0;
+    height: 1px;
+    display: block;
+    margin-top: 3vh;
+}
+
+.paragraph{
+    margin-top: 2vh;
+    width: 90%;
+}
+
+.partner{
+    height: 20vh;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+
+.partner h3{
+    font-size: 30px;
+}
+
+.partner img{
+    margin-top: 10px;
+}
+
+.partnerleft{
+    width: 30%;
+    height: 20vh;
+    float: left;
+}
+
+.partnerright{
+    margin-top: 2vh;
+    height: 16vh;
+    width: 70%;
+    float: left;
+}
+
+.portfoliocontent{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.project1{
+    height: 20vh;
+    width: 90%;
+    margin-top: 4%;
+    margin-left: 5%;
+    border: 2px solid black;
+    box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+    background-color: white;
+}
+
+.project1 img{
+    height: 20vh;
+    width: 100%;
+}
+
+.project2{
+    height: 20vh;
+    width: 90%;
+    margin-top: 4%;
+    margin-left: 5%;
+    border: 2px solid black;
+    box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+    background-color: white;
+}
+
+.project2 img{
+    height: 20vh;
+    width: 100%;
+}
+
+.project3{
+    height: 20vh;
+    width: 90%;
+    margin-top: 4%;
+    margin-left: 5%;
+    border: 2px solid black;
+    box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+    background-color: white;
+}
+
+.project3 img{
+    height: 20vh;
+    width: 100%;
+}
+
+.project4{
+    height: 20vh;
+    width: 90%;
+    margin-top: 4%;
+    margin-left: 5%;
+    border: 2px solid black;
+    box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.75);
+    background-color: white;
+    margin-bottom: 5%;
+}
+
+.project4 img{
+    height: 20vh;
+    width: 100%;
+}
+
+.contactcontent{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contactcontent p{
+    font-size: 25px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.aboutcontent p{
+    font-size: 25px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.partnerright p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact h1{
+    padding-top: 5vh;
+    font-size: 60px;
+}
+
+.paragraph1{
+    margin-top: 5vh;
+    width: 50%;
+    float: left;
+}
+
+.paragraph2{
+    margin-top: 5vh;
+    width: 50%;
+    float: left;
+}
+
+.left{
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
+.right{
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
+.homecontent{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.home h1{
+    padding-top: 10vh;
+    font-size: 70px;
+    color: white;
+}
+
+.home h2{
+    padding-top: 3vh;
+    font-size: 55px;
+    color: white;
+}
+
+.skillset{
+    margin-top: 10vh;
+    float: left;
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+}
+
+.skillset h3{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.project1left{
+    width: 40%;
+    height: 20vh;
+    float: left;
+}
+
+.project1right{
+    width: 60%;
+    height: 20vh;
+    float: left;
+    padding-left: 3%;
+}
+
+.project2left{
+    width: 40%;
+    height: 20vh;
+    float: left;
+}
+
+.project2right{
+    width: 60%;
+    height: 20vh;
+    float: left;
+    padding-left: 3%;
+}
+
+.project3left{
+    width: 40%;
+    height: 20vh;
+    float: left;
+}
+
+.project3right{
+    width: 60%;
+    height: 20vh;
+    float: left;
+    padding-left: 3%;
+}
+
+.project4left{
+    width: 40%;
+    height: 20vh;
+    float: left;
+}
+
+.project4right{
+    width: 60%;
+    height: 20vh;
+    float: left;
+    padding-left: 3%;
+}
+
+.project1right button{
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: black;
+    color: white;
+    border: 3px solid blue;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.project4right button{
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: black;
+    color: white;
+    border: 3px solid blue;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.project2right button{
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: black;
+    color: white;
+    border: 3px solid blue;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.project3right button{
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: black;
+    color: white;
+    border: 3px solid blue;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.portfolio button:hover{
+    transform: scale(1.1);
+}
+
+#reused_form{
+    border: 1px solid yellow;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 10%;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+	border-radius: 10px;
+    border: 0;
+    padding: 25px;
+    min-height: 50vh;
+}
+
+#reused_form button{
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #4aa998;
+    border: none;
+    color: white;
+    border-radius: 10%;
+    font-size: 20px;
+    transition: .2s ease-in-out;
+}
+
+#reused_form button:hover{
+    background-color: #4aa998;
+}
+
+#reused_form label{
+    font-weight: bold;
+    color: black;
+}
+
+#reused_form input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+#reused_form textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+#topp{
+    padding-top: 10px;
+}
+
+
+.resume {
+    width: 95%;
+    height: 100vh;
+    margin-left: 5%;
+    position: absolute;
+    overflow-y: scroll;
+    background-color: black;
+    display: none;
+}
+
+#resumepng{
+    height: 100%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.skillset h3{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.skillset button{
+    margin-top: 20px;
+    width: 35%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 5vh;
+    background-color: black;
+    color: red;
+    border: 1px solid grey;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transition: 0.1s ease-in-out;
+}
+
+.skillset button p{
+    font-size: 20px;
+    padding:4px;
+}
+
+.skillset button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* reponsive */
+
+@media screen and (max-width: 1200px){
+    .home{
+        background-position: center;
+        width: 90%;
+        margin-left: 10%;
+    }
+    .menu{
+        width: 10%;
+    }
+    .about{
+        width: 90%;
+        margin-left: 10%;
+    }
+    .portfolio{
+        width: 90%;
+        margin-left: 10%;
+    }
+    .contact{
+        width: 90%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        height: auto;
+        overflow-y: scroll;
+    }
+    .menu{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .logo img{
+        height: 10vh;
+        width: 20vh;
+        margin-left: 10%;
+    }
+    .social-links{
+        display: flex;
+        flex-direction: row;
+    }
+    .home{
+        height: 100vh;
+        overflow: hidden;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10vh;
+    }
+    .about{
+        height: auto;
+        overflow-y: scroll;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10vh;
+    }
+    .portfolio{
+        height: auto;
+        overflow-y: scroll;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10vh;
+    }
+    .contact{
+        height: auto;
+        overflow-y: scroll;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10vh;
+    }
+    .home h1{
+        font-size : 40px;
+    }
+    .home h2{
+        font-size: 25px;
+    }
+    .nav-links{
+    display: none;
+    }
+    .burger{
+        display: block;
+        margin-right: 10%;
+        }
+        .nav-links{
+            position: absolute;
+            right: 0px;
+            min-height: 10vh;
+            top: 10vh;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+            display: none;
+            z-index: 6;
+        }
+        .nav-links li{
+            opacity: 1;
+            color: white;
+            font-size: 10px;
+        }
+        .burger{
+            display: block;
+        }
+        .contact{
+            overflow-y: scroll;
+            height: auto;
+        }
+        .paragraph1{
+            width: 90%;
+            margin: 0 auto;
+            height: auto;
+        }
+        .paragraph2{
+            width: 90%;
+            margin: 0 auto;
+            height: 40vh;
+            margin-top: 5vh;
+        }
+        .contactcontent{
+            height: auto;
+            overflow-y: scroll;
+        }
+        #reused_form{
+            width: 90%;
+        }
+        .paragraph2 p{
+            font-size: 15px;
+        }
+        .contactcontent p{
+            font-size: 18px;
+        }
+        .nav-active{
+            transform: translateX(0%);
+            display: flex;}
+        
+        .toggle .line1{
+            transform: rotate(-45deg) translate(-5px,6px);}
+        .toggle .line2{
+            opacity: 0;}
+        .toggle .line3{
+            transform: rotate(45deg) translate(-5px,-6px);}
+        }
+
+        @media screen and (max-width: 1300px){
+            .project1{
+                min-height: 40vh;
+                max-height: auto;
+                width: 70%;
+                margin: 0 auto;
+                border: none;
+                padding-top: 10%;
+                display: block;
+                background: none;
+                box-shadow: none;
+            }
+            .project2{
+                min-height: 40vh;
+                max-height: auto;
+                width: 70%;
+                margin: 0 auto;
+                border: none;
+                padding-top: 10%;
+                display: block;
+                background: none;
+                box-shadow: none;
+            }
+            .project3{
+                min-height: 40vh;
+                max-height: auto;
+                width: 70%;
+                margin: 0 auto;
+                border: none;
+                padding-top: 10%;
+                display: block;
+                background: none;
+                box-shadow: none;
+            }
+            .project1left{
+                width: 70%;
+                height: 20vh;
+                float: left;
+            }
+            .project1right{
+                width: 70%;
+                height: 40vh;
+                float: left;
+            }
+            .project2left{
+                width: 70%;
+                height: 20vh;
+                float: left;
+            }
+            .project2right{
+                width: 70%;
+                height: 40vh;
+                float: left;
+            }
+            .project3left{
+                width: 70%;
+                height: 20vh;
+                float: left;
+            }
+            .project3right{
+                width: 70%;
+                height: 40vh;
+                float: left;
+            }
+            .portfolio{
+                height: auto;
+                overflow-y: scroll;
+            }
+            .portfoliocontent{
+                height: auto;
+                overflow-y: scroll;
+            }
+            .container{
+                height: auto;
+                overflow-y: scroll;
+            }
+            .about{
+                height: auto;
+                overflow-y: scroll;
+            }
+            .aboutcontent{
+                height: 100vh;
+            }
+            .partner{
+                height: 50vh;
+            }
+        }
+
+
+@media screen and (max-width: 450px){
+    .logo{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .skillset{
+        height: auto;
+    }
+    .skill{
+        max-height: auto;
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5%;
+        grid-row-gap: 5%;
+        grid-column-gap: 2%;
+        min-height: 60vh;
+    }
+    
+    .skill img{
+        height: 50px;
+        max-width: 100px;
+        margin: 0 auto;
+    }
+    .partner{
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        padding-top: 10%;
+    }
+    .partnerleft{
+        height: 20vh;
+        width: 100%;
+        float: left;
+    }
+    .partnerright{
+        width: 100%;
+        margin-bottom: 10vh;
+        height: auto;
+        float: left;
+    }
+}
+
+
+
+        @keyframes navLinkFade{
+            from{
+                opacity: 0;
+                transform: translateX(50px);
+            }to{
+                opacity: 1;
+                transform: translateX(0px);
+            }}
+
+
+
+  
